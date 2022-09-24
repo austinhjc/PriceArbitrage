@@ -1,0 +1,3 @@
+BookieName,Player1WinOdds,Player2WinOdds
+Bovada,1.90,1.90
+BetOnline,1.4,2.5

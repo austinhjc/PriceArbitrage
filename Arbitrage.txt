@@ -1,0 +1,91 @@
+Arbitrage
+
+Odds Calculator
+1/ODDS = implied prob of win
+
+Ex Coin Flip
+
+	Assume fair odds : ODDS =  1/.5 = 2
+	Odds for Heads : (50% prob win)
+	1/ODDS = 50% =   .5
+
+	Bookmaker odds : (1.90)
+	1/1.90 = 53% = 0.53
+	Because bookie odds are higher than actual odds, odds are not fair
+	Bookie makes it seem like its a higher prob than it is, but its not, thus they are overcharging.
+
+	Assum Mispriced Odds Example (Bettor favored)
+	Heads Tails 
+	2.50  2.50
+
+	Bet On heads 
+	(2.50-1=1.5) on win (-1) on loss
+	Bet On Tails
+	(-1) on loss (2.50-1=1.5) on win
+
+	First Bet on Heads                 NetProfit
+	(2.50-1=1.5) on win (-1) on loss : (1.5-1) = .5
+	Second Bet on Tails
+	(-1) on loss (2.50-1=1.5) on win : (1.5-1) = .5
+
+	Take advantage of the mispriced odds by betting on both heads and tails.
+	No matter of the outcome, we will still profit .5 on the result
+
+Ex France Vs Switch (Draw allowed)
+
+	Total Implied Probability = 1/France Odds + 1/Draw odds + 1/Switz Odds
+
+	Bookie 1
+	-France Win: 1.55
+	-Draw: 3.90
+	-Switz Win: 5.50
+	Bookie 2
+	-France Win: 1.5
+	-Draw: 4.0
+	-Switz Win: 7.0
+
+	(Bookie 1 odds)
+	= 1/1.55 + 1/3.80 + 1/5.50 = 109%
+	NOTE: because this is over 100%, the bookie has the favorable odds
+
+	(Bookie 2 odds)
+	= 1/1.50 + 1/4 + 1/7 = 106%
+	NOTE: because this is over 100%, the bookie has the favorable odds
+
+	(Combine the best of Bookie 1 and Bookie 2 odds)
+	= 1/1.55 + 1/4 + 1/7 = 103%
+	NOTE: No oportunities for arbitrage
+
+Ex Korea vs Germany (with PK no draw)
+	Bookie 1
+	-Korea Win: 1.90
+	-Germany Win: 1.90
+	Bookie 2
+	-Korea Win: 1.4
+	-Germany Win: 2.5
+
+	(Bookie 1 Total Implied Probability):
+	1/1.9 + 1/1.9 = 105%
+
+	(Bookie 2 Total Implied Probability):
+	1/1.4 + 1/2.5 = 111%
+
+	(Combine the best of Bookie 1 and Bookie 2 odds)
+	1/1.9 + 1/2.5 = 92.63%
+	NOTE: because this is under 100%, the better has the favorable odds
+
+	1) Unbiased arbitrage (same profit regardless of outcome)
+		Stake 56.83 on Korea win @ 1.9, Stake 43.18 on Germany Win @ 2.5
+
+		Result Korean Win
+		((56.82 * (1.9-1))=51.138) - (43.18)               = 51.138-43.18 = 7.96 Net Profit
+		Result Germany Win
+		(-56.82)                   + (43.18*(2.5-1)=64.77) = 64.77-56.82  = 7.96 Net Profit
+
+	2) Biased arbitrage (win big on one outcome, no loss on other)
+		Stake 52.63 on Korea win @ 1.9, Stake 47.37 on Germany Win @ 2.5
+
+		Result Korean Win
+		((52.63 * (1.9-1))=47.37) - (47.37)               = 47.37-47.374 = 0     Net Profit
+		Result Germany Win
+		(-52.63)                  + (47.37*(2.5-1)=71.05) = 71.05-52.63  = 18.42 Net Profit
